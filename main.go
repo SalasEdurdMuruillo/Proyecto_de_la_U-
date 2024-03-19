@@ -3,12 +3,78 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("1-Motocicleta ")
-	fmt.Println("2- Liviano ")
-	fmt.Println("3- Carga Liviana ")
-	fmt.Println("4- Carga Pesada ")
-	fmt.Println("5- Agrícola ")
-	fmt.Println("6- - Casa Rodante ")
-	fmt.Println("7- Buses ")
-	fmt.Println("8- Regresar a menú principal ")
+	marco("Tipo de Vehículo ║ Tarifa diurna(6 a 17) ║ Tarifa noturna(18 a 5)")
+
+}
+
+func marco(msj string) {
+	cmd := exec.Command("cmd", "/c", "cls")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+	fmt.Print("╔")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╗")
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+
+	fmt.Print("╝")
+	fmt.Println("")
+	fmt.Print("║", msj, "     ║")
+	fmt.Println("")
+	fmt.Print("╚")
+	for x := 0; x < len(msj); x++ {
+		fmt.Print("═")
+	}
+	fmt.Print("╝")
+}
 }
